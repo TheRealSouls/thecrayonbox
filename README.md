@@ -4,9 +4,10 @@ A static, single-page marketing website for **The Crayon Box**, a modern
 purpose-built childcare and preschool facility in Latlurcan, Monaghan, Co.
 Monaghan (Eircode **H18 Y2H3**).
 
-Built as plain **HTML + CSS + vanilla JavaScript** — no build step, no
-dependencies. Open `index.html` in a browser, or serve the folder with any
-static host.
+Built as plain **HTML + CSS + vanilla JavaScript** — no build step. Icons are
+loaded at runtime from a hosted **Font Awesome** kit (the `<script>` in
+`index.html`'s `<head>`), so the page needs an internet connection to display
+them. Open `index.html` in a browser, or serve the folder with any static host.
 
 ## Run locally
 
