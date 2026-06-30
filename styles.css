@@ -480,6 +480,8 @@ address { font-style: normal; }
   font-size: .9rem; color: #b9b4c4;
 }
 .footer__bottom p { margin: 0; }
+.footer__madeby a { color: #e9e6ef; font-weight: 700; text-decoration: underline; }
+.footer__madeby a:hover { color: var(--yellow); }
 
 /* Responsive */
 /* Collapse the primary nav to a toggle before it can crowd the logo.
