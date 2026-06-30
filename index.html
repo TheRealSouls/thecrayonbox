@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="en-IE">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>The Crayon Box | Childcare &amp; Preschool in Monaghan</title>
-  <meta name="description" content="The Crayon Box is a modern purpose-built childcare facility in Latlurcan, Monaghan, offering full-day care, part-time care, preschool, ECCE, after-school care, and summer camps for children aged 0–12." />
+  <meta name="description" content="The Crayon Box is a modern purpose-built childcare facility in Latlurcan, Monaghan, offering full-day care, part-time care, preschool, ECCE, after-school care, and summer camps for children aged 1 to 12." />
   <meta name="keywords" content="childcare Monaghan, preschool Monaghan, ECCE Monaghan, after-school care Monaghan, childcare Latlurcan, crèche Monaghan, summer camps Monaghan, National Childcare Scheme" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="author" content="The Crayon Box" />
   <link rel="canonical" href="https://www.thecrayonbox.ie/" />
   <meta name="theme-color" content="#29ABE2" />
 
   <meta property="og:type" content="business.business" />
+  <meta property="og:site_name" content="The Crayon Box" />
   <meta property="og:title" content="The Crayon Box | Childcare &amp; Preschool in Monaghan" />
-  <meta property="og:description" content="A bright, caring, purpose-built childcare facility in Latlurcan, Monaghan for children aged 0–12. Full-day, part-time, preschool/ECCE, after-school and summer camps." />
+  <meta property="og:description" content="A bright, caring, purpose-built childcare facility in Latlurcan, Monaghan for children aged 1 to 12. Full-day, part-time, preschool/ECCE, after-school and summer camps." />
   <meta property="og:locale" content="en_IE" />
-  <meta property="og:image" content="images/facility-exterior.jpg" />
+  <meta property="og:image" content="https://www.thecrayonbox.ie/images/facility-exterior.jpg" />
+  <meta property="og:image:alt" content="The Crayon Box childcare premises in Latlurcan, Monaghan." />
   <meta property="og:url" content="https://www.thecrayonbox.ie/" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Crayon Box | Childcare &amp; Preschool in Monaghan" />
+  <meta name="twitter:description" content="Purpose-built childcare, preschool/ECCE, after-school care and summer camps in Latlurcan, Monaghan." />
+  <meta name="twitter:image" content="https://www.thecrayonbox.ie/images/facility-exterior.jpg" />
+  <meta name="twitter:image:alt" content="The Crayon Box childcare premises in Latlurcan, Monaghan." />
 
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="apple-touch-icon" href="images/logo.png" />
+  <link rel="preload" as="image" href="images/facility-exterior.jpg" fetchpriority="high" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/d24d18c78a.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d24d18c78a.js" crossorigin="anonymous" defer></script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ChildCare",
+    "@id": "https://www.thecrayonbox.ie/#childcare",
     "name": "The Crayon Box",
-    "description": "Modern purpose-built childcare facility in Latlurcan, Monaghan offering full-day care, part-time care, preschool/ECCE, after-school care and summer camps for children aged 0–12.",
+    "description": "Modern purpose-built childcare facility in Latlurcan, Monaghan offering full-day care, part-time care, preschool/ECCE, after-school care and summer camps for children aged 1 to 12.",
     "url": "https://www.thecrayonbox.ie/",
     "logo": "https://www.thecrayonbox.ie/images/logo.png",
     "image": "https://www.thecrayonbox.ie/images/facility-exterior.jpg",
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=H18%20Y2H3",
     "telephone": "+353 47 30197",
     "email": "thecrayonbox100@gmail.com",
     "foundingDate": "2025",
@@ -50,20 +60,45 @@
       "postalCode": "H18 Y2H3",
       "addressCountry": "IE"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 54.24251684549197,
+      "longitude": -6.949691588301533
+    },
     "areaServed": "Monaghan",
+    "openingHours": [
+      "Mo-Th 08:00-17:30",
+      "Fr 08:00-17:00"
+    ],
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00"
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "08:00",
+        "closes": "17:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "08:00",
+        "closes": "17:00"
       }
     ],
+    "availableLanguage": ["English", "Irish", "Polish", "Lithuanian", "Russian"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+353 47 30197",
+      "email": "thecrayonbox100@gmail.com",
+      "contactType": "Admissions enquiries",
+      "areaServed": "IE",
+      "availableLanguage": ["English", "Irish", "Polish", "Lithuanian", "Russian"]
+    },
     "paymentAccepted": "National Childcare Scheme (NCS)",
     "makesOffer": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Baby & Toddler Care (0–3 years)" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Preschool & ECCE (3–5 years)" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "After-School Care (5–12 years)" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Summer Camps (5–12 years)" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Baby & Toddler Care (1 to 3 years)" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Preschool & ECCE (3 to 5 years)" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "After-School Care (5 to 12 years)" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Summer Camps (5 to 12 years)" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full-Day Care" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Part-Time Care" } }
     ]
@@ -72,64 +107,80 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="The Crayon Box — home">
+      <a class="brand" href="#top" data-i18n-aria="a11y.brandHome" aria-label="The Crayon Box, home">
         <img class="brand__logo" src="images/logo.png" alt="" width="56" height="56" />
         <span class="brand__name">The Crayon Box</span>
       </a>
 
       <nav class="main-nav" aria-label="Primary">
-        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <div class="lang-switch">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <label class="visually-hidden" for="langSelect" data-i18n="lang.label">Choose language</label>
+          <select id="langSelect" class="lang-switch__select">
+            <option value="en">English</option>
+            <option value="ga">Gaeilge</option>
+            <option value="pl">Polski</option>
+            <option value="lt">Lietuvių</option>
+            <option value="ru">Русский</option>
+          </select>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" data-i18n-aria="a11y.openMenu" aria-label="Open menu">
           <span class="nav-toggle__bar"></span>
           <span class="nav-toggle__bar"></span>
           <span class="nav-toggle__bar"></span>
         </button>
 
         <ul class="nav-menu" id="navMenu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#facilities">Facilities</a></li>
-          <li><a href="#ncs">NCS Support</a></li>
-          <li><a href="#location">Location</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="nav-menu__cta"><a class="btn btn--primary btn--sm" href="#contact">Enquire Now</a></li>
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#facilities" data-i18n="nav.facilities">Facilities</a></li>
+          <li><a href="#ncs" data-i18n="nav.ncs">NCS</a></li>
+          <li><a href="#location" data-i18n="nav.location">Location</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li class="nav-menu__cta"><a class="btn btn--primary btn--sm" href="#contact" data-i18n="nav.enquire">Enquire Now</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <div class="lang-welcome">
+    <p class="container">
+      <i class="fa-solid fa-globe" aria-hidden="true"></i>
+      <span class="lang-welcome__greet"><span lang="ga">Fáilte</span> · <span lang="en">Welcome</span> · <span lang="pl">Witamy</span> · <span lang="lt">Sveiki atvykę</span> · <span lang="ru">Добро пожаловать</span></span>
+      <span data-i18n="welcome.choose">Choose your language at the top of the page.</span>
+    </p>
+  </div>
+
   <main id="main">
     <section class="hero" id="home" aria-labelledby="hero-heading">
-      <span class="blob blob--yellow" aria-hidden="true"></span>
-      <span class="blob blob--blue" aria-hidden="true"></span>
-      <span class="blob blob--coral" aria-hidden="true"></span>
-
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow">Early Childhood Education &amp; Care · Est. 2025</p>
-          <h1 id="hero-heading">A bright, caring place for children to learn, play, and grow</h1>
-          <p class="hero__sub">
-            Modern, purpose-built childcare in Latlurcan, Monaghan for children aged
-            <strong>0–12 years</strong> — from baby and toddler rooms to preschool, ECCE,
-            after-school care and summer camps.
+          <p class="eyebrow" data-i18n="hero.eyebrow">Early Childhood Education &amp; Care · Est. 2025</p>
+          <h1 id="hero-heading" data-i18n="hero.title">A bright, caring place for children to learn, play, and grow</h1>
+          <p class="hero__sub" data-i18n-html="hero.sub">
+            We’re a modern, purpose-built childcare service in Latlurcan, Monaghan, caring for
+            children aged <strong>1 to 12</strong>. That runs from our baby and toddler rooms right
+            through to preschool, ECCE, after-school care and summer camps.
           </p>
 
           <div class="hero__actions">
-            <a class="btn btn--primary btn--lg" href="#contact">Enquire About Availability</a>
+            <a class="btn btn--primary btn--lg" href="#contact" data-i18n="hero.cta1">Enquire About Availability</a>
             <a class="btn btn--ghost btn--lg" href="https://www.google.com/maps/dir/?api=1&amp;destination=The%20Crayon%20Box%2C%20Latlurcan%2C%20Monaghan%2C%20H18%20Y2H3" target="_blank" rel="noopener noreferrer">
-              <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> Get Directions
-              <span class="visually-hidden"> (opens Google Maps in a new tab)</span>
+              <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> <span data-i18n="cta.directions">Get Directions</span>
+              <span class="visually-hidden" data-i18n="a11y.newTab"> (opens Google Maps in a new tab)</span>
             </a>
           </div>
 
           <ul class="hero__badges" aria-label="Highlights">
-            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Purpose-built facility</li>
-            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Ages 0–12 years</li>
-            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> NCS accepted</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> <span data-i18n="hero.badge1">Purpose-built facility</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> <span data-i18n="hero.badge2">Ages 1 to 12</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> <span data-i18n="hero.badge3">NCS accepted</span></li>
           </ul>
         </div>
 
@@ -137,11 +188,11 @@
           <figure class="hero__frame">
             <img
               src="images/facility-exterior.jpg"
-              alt="The Crayon Box premises in Latlurcan, Monaghan — a modern building with bright, colourful signage and framed windows."
-              width="387" height="516" loading="eager" />
-            <figcaption class="hero__caption">Our purpose-built home in Latlurcan, Monaghan</figcaption>
+              alt="The Crayon Box premises in Latlurcan, Monaghan. A modern building with bright, colourful signage and framed windows."
+              width="387" height="516" loading="eager" decoding="async" fetchpriority="high" />
+            <figcaption class="hero__caption" data-i18n="hero.caption">Our purpose-built home in Latlurcan, Monaghan</figcaption>
           </figure>
-          <span class="hero__sticker">Now enrolling</span>
+          <span class="hero__sticker" data-i18n="hero.sticker">Now enrolling</span>
         </div>
       </div>
     </section>
@@ -150,23 +201,23 @@
       <div class="container facts__grid">
         <div class="fact">
           <span class="fact__icon ic-blue"><i class="fa-solid fa-building" aria-hidden="true"></i></span>
-          <p class="fact__title">Purpose-built</p>
-          <p class="fact__text">A brand-new facility designed around children</p>
+          <p class="fact__title" data-i18n="facts.f1t">Purpose-built</p>
+          <p class="fact__text" data-i18n="facts.f1d">A brand-new building designed around children</p>
         </div>
         <div class="fact">
           <span class="fact__icon ic-green"><i class="fa-solid fa-children" aria-hidden="true"></i></span>
-          <p class="fact__title">Ages 0–12</p>
-          <p class="fact__text">Babies, toddlers, preschool and school-age</p>
+          <p class="fact__title" data-i18n="facts.f2t">Ages 1 to 12</p>
+          <p class="fact__text" data-i18n="facts.f2d">Babies, toddlers, preschool and school-age</p>
         </div>
         <div class="fact">
           <span class="fact__icon ic-coral"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
-          <p class="fact__title">Open from 8am</p>
-          <p class="fact__text">Monday to Friday for working families</p>
+          <p class="fact__title" data-i18n="facts.f3t">Weekday care</p>
+          <p class="fact__text" data-i18n="facts.f3d">Mon-Thu 8am-5:30pm; Fri 8am-5pm</p>
         </div>
         <div class="fact">
           <span class="fact__icon ic-lavender"><i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i></span>
-          <p class="fact__title">NCS accepted</p>
-          <p class="fact__text">National Childcare Scheme welcome</p>
+          <p class="fact__title" data-i18n="facts.f4t">NCS accepted</p>
+          <p class="fact__text" data-i18n="facts.f4d">National Childcare Scheme welcome</p>
         </div>
       </div>
     </section>
@@ -174,54 +225,53 @@
     <section class="section about" id="about" aria-labelledby="about-heading">
       <div class="container about__grid">
         <div class="about__intro">
-          <p class="eyebrow eyebrow--coral">About us</p>
-          <h2 id="about-heading">A safe, nurturing place to begin the learning journey</h2>
-          <p>
-            The Crayon Box is a modern, purpose-built childcare facility that opened in 2025 in
-            Latlurcan, Co. Monaghan. We provide a warm, safe and stimulating environment for
-            babies, toddlers, preschool children and school-aged children.
+          <p class="eyebrow eyebrow--coral" data-i18n="about.eyebrow">About us</p>
+          <h2 id="about-heading" data-i18n="about.title">A safe, welcoming start for your child</h2>
+          <p data-i18n="about.p1">
+            The Crayon Box opened in 2025 in Latlurcan, Co. Monaghan. It’s a modern, purpose-built
+            setting where we look after babies, toddlers, preschoolers and school-aged children.
           </p>
-          <p>
-            Every room has been thoughtfully designed for the age group it cares for — bright,
-            calm and full of opportunities to explore, play and grow. Our goal is simple: to give
-            local families a place they can trust, where children feel happy, settled and supported
+          <p data-i18n="about.p2">
+            Each room is set up for the age group that uses it, so the space feels right whether a
+            child is having a nap, learning their first words or finishing homework. What we want is
+            simple: somewhere local families can trust, where their child feels happy and settled
             every day.
           </p>
 
           <div class="about__points">
             <div class="about__point">
               <i class="fa-solid fa-circle-check check" aria-hidden="true"></i>
-              <p>Bright, age-appropriate rooms for every stage from 0–12 years</p>
+              <p data-i18n="about.pt1">Bright, age-appropriate rooms for every stage from 1 to 12</p>
             </div>
             <div class="about__point">
               <i class="fa-solid fa-circle-check check" aria-hidden="true"></i>
-              <p>Indoor and outdoor spaces that encourage curiosity and play</p>
+              <p data-i18n="about.pt2">Plenty of indoor and outdoor space to explore</p>
             </div>
             <div class="about__point">
               <i class="fa-solid fa-circle-check check" aria-hidden="true"></i>
-              <p>A friendly, family-focused approach rooted in the local community</p>
+              <p data-i18n="about.pt3">A friendly, local team that gets to know every family</p>
             </div>
           </div>
 
-          <a class="btn btn--primary" href="#services">Explore our services</a>
+          <a class="btn btn--primary" href="#services" data-i18n="about.cta">Explore our services</a>
         </div>
 
         <aside class="about__stats" aria-label="Key details">
           <div class="stat-card stat-card--blue">
             <span class="stat-card__num">2025</span>
-            <span class="stat-card__label">Year we opened our doors</span>
+            <span class="stat-card__label" data-i18n="about.stat1">The year we opened our doors</span>
           </div>
           <div class="stat-card stat-card--green">
-            <span class="stat-card__num">0–12</span>
-            <span class="stat-card__label">Years — every age catered for</span>
+            <span class="stat-card__num">1-12</span>
+            <span class="stat-card__label" data-i18n="about.stat2">The ages we care for</span>
           </div>
           <div class="stat-card stat-card--yellow">
             <span class="stat-card__num">6</span>
-            <span class="stat-card__label">Childcare options to suit your family</span>
+            <span class="stat-card__label" data-i18n="about.stat3">Childcare options for your family</span>
           </div>
           <div class="stat-card stat-card--coral">
             <span class="stat-card__num">8am</span>
-            <span class="stat-card__label">Doors open, Monday to Friday</span>
+            <span class="stat-card__label" data-i18n="about.stat4">Mon-Thu until 5:30pm; Friday until 5pm</span>
           </div>
         </aside>
       </div>
@@ -230,60 +280,60 @@
     <section class="section section--tint services" id="services" aria-labelledby="services-heading">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow eyebrow--green">Our services</p>
-          <h2 id="services-heading">Childcare for every age and every family</h2>
-          <p class="section-head__sub">
-            From your baby’s first steps to busy school days and summer adventures, we offer
-            flexible options to fit family life in Monaghan.
+          <p class="eyebrow eyebrow--green" data-i18n="services.eyebrow">Our services</p>
+          <h2 id="services-heading" data-i18n="services.title">Childcare for every age and every family</h2>
+          <p class="section-head__sub" data-i18n="services.sub">
+            Whatever stage your child is at, we have a place to suit. Here’s what we offer families
+            in and around Monaghan.
           </p>
         </header>
 
         <div class="card-grid">
           <article class="service-card">
             <span class="service-card__icon icon--blue" aria-hidden="true"><i class="fa-solid fa-baby"></i></span>
-            <h3>Baby &amp; Toddler Care</h3>
-            <p class="service-card__age">0–3 years</p>
-            <p>Gentle, attentive care in calm baby and toddler rooms — with a dedicated sleep space and plenty of warmth as little ones settle, play and reach early milestones.</p>
+            <h3 data-i18n="svc.baby.t">Baby &amp; Toddler Care</h3>
+            <p class="service-card__age" data-i18n="svc.baby.age">1 to 3 years</p>
+            <p data-i18n="svc.baby.d">Calm, attentive care for our youngest children, with a quiet sleep space for naps and lots of one-to-one warmth as they settle in and reach their early milestones.</p>
           </article>
 
           <article class="service-card">
             <span class="service-card__icon icon--green" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
-            <h3>Preschool &amp; ECCE</h3>
-            <p class="service-card__age">3–5 years</p>
-            <p>Play-based preschool rooms that build confidence, friendships and early learning skills, with places available under the free ECCE pre-school programme.</p>
+            <h3 data-i18n="svc.pre.t">Preschool &amp; ECCE</h3>
+            <p class="service-card__age" data-i18n="svc.pre.age">3 to 5 years</p>
+            <p data-i18n="svc.pre.d">Play-based preschool rooms where children make friends and build the confidence they’ll take to school. We offer places under the free ECCE pre-school programme.</p>
           </article>
 
           <article class="service-card">
             <span class="service-card__icon icon--coral" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
-            <h3>After-School Care</h3>
-            <p class="service-card__age">5–12 years</p>
-            <p>A relaxed, supervised space after the school day for snacks, homework, play and downtime — giving working parents reliable, friendly cover.</p>
+            <h3 data-i18n="svc.after.t">After-School Care</h3>
+            <p class="service-card__age" data-i18n="svc.after.age">5 to 12 years</p>
+            <p data-i18n="svc.after.d">Somewhere relaxed and supervised for after the school bell: a snack, a hand with homework, and time to unwind. It gives working parents cover they can count on.</p>
           </article>
 
           <article class="service-card">
             <span class="service-card__icon icon--yellow" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
-            <h3>Summer Camps</h3>
-            <p class="service-card__age">5–12 years</p>
-            <p>Summer camps filled with activities, games, crafts and outdoor play to keep school-age children busy and happy through the holidays.</p>
+            <h3 data-i18n="svc.summer.t">Summer Camps</h3>
+            <p class="service-card__age" data-i18n="svc.summer.age">5 to 12 years</p>
+            <p data-i18n="svc.summer.d">Holiday camps that keep school-age children busy and happy, with games, crafts and lots of time outdoors.</p>
           </article>
 
           <article class="service-card">
             <span class="service-card__icon icon--lavender" aria-hidden="true"><i class="fa-solid fa-clock"></i></span>
-            <h3>Full-Day Care</h3>
-            <p class="service-card__age">Flexible hours</p>
-            <p>Full-day childcare for families who need longer cover, with a consistent daily routine of care, play, rest and learning in one safe place.</p>
+            <h3 data-i18n="svc.full.t">Full-Day Care</h3>
+            <p class="service-card__age" data-i18n="svc.full.age">Flexible hours</p>
+            <p data-i18n="svc.full.d">A full day of care for families who need longer hours, following a steady routine of play, meals, rest and learning in one safe place.</p>
           </article>
 
           <article class="service-card">
             <span class="service-card__icon icon--blue" aria-hidden="true"><i class="fa-solid fa-calendar-check"></i></span>
-            <h3>Part-Time Care</h3>
-            <p class="service-card__age">Flexible days</p>
-            <p>Part-time places for families who need a few sessions or days each week — a flexible option that fits around your schedule.</p>
+            <h3 data-i18n="svc.part.t">Part-Time Care</h3>
+            <p class="service-card__age" data-i18n="svc.part.age">Flexible days</p>
+            <p data-i18n="svc.part.d">Part-time places for families who only need a few sessions or days a week, arranged to fit around your routine.</p>
           </article>
         </div>
 
-        <p class="services__note">
-          Availability varies by room and age group. <a href="#contact">Get in touch</a> to check current places.
+        <p class="services__note" data-i18n-html="services.note">
+          Places fill up by room and age group, so <a href="#contact">get in touch</a> to check what’s currently available.
         </p>
       </div>
     </section>
@@ -291,63 +341,63 @@
     <section class="section facilities" id="facilities" aria-labelledby="facilities-heading">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow eyebrow--lavender">Our facilities</p>
-          <h2 id="facilities-heading">Bright, safe spaces designed for children</h2>
-          <p class="section-head__sub">
-            Our brand-new, purpose-built setting has been planned from the ground up to keep
-            children safe, comfortable and inspired — indoors and out.
+          <p class="eyebrow eyebrow--lavender" data-i18n="fac.eyebrow">Our facilities</p>
+          <h2 id="facilities-heading" data-i18n="fac.title">Bright, safe spaces designed for children</h2>
+          <p class="section-head__sub" data-i18n="fac.sub">
+            We planned the building from the ground up, so every space indoors and out is set up to
+            keep children safe and comfortable.
           </p>
         </header>
 
         <div class="facility-grid">
           <div class="facility">
             <span class="facility__icon icon--lavender" aria-hidden="true"><i class="fa-solid fa-brain"></i></span>
-            <h3>Custom sensory rooms</h3>
-            <p>Calm, dedicated spaces that support sensory play, focus and gentle exploration.</p>
+            <h3 data-i18n="fac.sensory.t">Custom sensory rooms</h3>
+            <p data-i18n="fac.sensory.d">Quiet, dedicated rooms for sensory play and gentle, focused exploration.</p>
           </div>
           <div class="facility">
             <span class="facility__icon icon--blue" aria-hidden="true"><i class="fa-solid fa-shield-heart"></i></span>
-            <h3>Safe, purpose-built setting</h3>
-            <p>A premises designed from the ground up around the safety and wellbeing of every child.</p>
+            <h3 data-i18n="fac.safe.t">Safe, purpose-built setting</h3>
+            <p data-i18n="fac.safe.d">A building designed around the safety and wellbeing of every child in it.</p>
           </div>
           <div class="facility">
             <span class="facility__icon icon--coral" aria-hidden="true"><i class="fa-solid fa-bed"></i></span>
-            <h3>Sleep room</h3>
-            <p>A quiet, restful sleep room so babies and toddlers can nap soundly during the day.</p>
+            <h3 data-i18n="fac.sleep.t">Sleep room</h3>
+            <p data-i18n="fac.sleep.d">A quiet sleep room where babies and toddlers can nap soundly during the day.</p>
           </div>
           <div class="facility">
             <span class="facility__icon icon--green" aria-hidden="true"><i class="fa-solid fa-tree"></i></span>
-            <h3>Outdoor play areas</h3>
-            <p>Spacious outdoor areas where children can move, explore and enjoy fresh air.</p>
+            <h3 data-i18n="fac.outdoor.t">Outdoor play areas</h3>
+            <p data-i18n="fac.outdoor.d">Plenty of outdoor space for running around, exploring and fresh air.</p>
           </div>
           <div class="facility">
             <span class="facility__icon icon--yellow" aria-hidden="true"><i class="fa-solid fa-bucket"></i></span>
-            <h3>Built-in sandpit</h3>
-            <p>A dedicated sandpit for digging, building and hours of hands-on, sensory fun.</p>
+            <h3 data-i18n="fac.sand.t">Built-in sandpit</h3>
+            <p data-i18n="fac.sand.d">A built-in sandpit for digging, building and hands-on play.</p>
           </div>
           <div class="facility">
             <span class="facility__icon icon--coral" aria-hidden="true"><i class="fa-solid fa-kitchen-set"></i></span>
-            <h3>Outdoor mud kitchens</h3>
-            <p>Mud kitchens that spark imagination, messy play and learning through nature.</p>
+            <h3 data-i18n="fac.mud.t">Outdoor mud kitchens</h3>
+            <p data-i18n="fac.mud.d">Outdoor mud kitchens for imaginative, messy play and a bit of learning through nature.</p>
           </div>
           <div class="facility">
             <span class="facility__icon icon--blue" aria-hidden="true"><i class="fa-solid fa-baby-carriage"></i></span>
-            <h3>Baby &amp; toddler rooms</h3>
-            <p>Soft, calm rooms designed for the comfort and safety of our littlest learners.</p>
+            <h3 data-i18n="fac.rooms.t">Baby &amp; toddler rooms</h3>
+            <p data-i18n="fac.rooms.d">Soft, calm rooms built around the comfort of our littlest ones.</p>
           </div>
           <div class="facility">
             <span class="facility__icon icon--green" aria-hidden="true"><i class="fa-solid fa-palette"></i></span>
-            <h3>Preschool &amp; after-school spaces</h3>
-            <p>Bright, age-appropriate rooms for learning, creativity, homework and play.</p>
+            <h3 data-i18n="fac.spaces.t">Preschool &amp; after-school spaces</h3>
+            <p data-i18n="fac.spaces.d">Bright rooms suited to each age, for learning, creativity, homework and play.</p>
           </div>
         </div>
 
         <figure class="facility-photo">
           <img
             src="images/facility-exterior.jpg"
-            alt="The exterior of The Crayon Box building in Latlurcan, Monaghan — a modern dark-clad childcare facility with bright, colourful signage and framed windows."
-            width="387" height="516" loading="lazy" />
-          <figcaption>Our modern, purpose-built premises in Latlurcan, Monaghan.</figcaption>
+            alt="The exterior of The Crayon Box building in Latlurcan, Monaghan, a modern dark-clad childcare facility with bright, colourful signage and framed windows."
+            width="387" height="516" loading="lazy" decoding="async" />
+          <figcaption data-i18n="fac.caption">Our modern, purpose-built premises in Latlurcan, Monaghan.</figcaption>
         </figure>
       </div>
     </section>
@@ -355,20 +405,20 @@
     <section class="section ncs" id="ncs" aria-labelledby="ncs-heading">
       <div class="container ncs__inner">
         <div class="ncs__content">
-          <p class="eyebrow eyebrow--coral">Financial support</p>
-          <h2 id="ncs-heading">We accept the National Childcare Scheme (NCS)</h2>
-          <p>
-            The Crayon Box accepts the National Childcare Scheme, helping eligible families reduce
-            the cost of childcare. Parents can contact us to discuss availability and how NCS
-            support may apply to your family.
+          <p class="eyebrow eyebrow--coral" data-i18n="ncs.eyebrow">Financial support</p>
+          <h2 id="ncs-heading" data-i18n="ncs.title">We accept the National Childcare Scheme (NCS)</h2>
+          <p data-i18n="ncs.p">
+            We accept the National Childcare Scheme, which helps eligible families with the cost of
+            childcare. Get in touch and we can talk through availability and how the NCS might apply
+            to you.
           </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#contact">Ask about NCS &amp; availability</a>
-            <a class="btn btn--ghost" href="tel:+3534730197"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call us</a>
+          <div class="hero__actions ncs__actions">
+            <a class="btn btn--primary" href="#contact" data-i18n="ncs.cta1">Ask about NCS &amp; availability</a>
+            <a class="btn btn--ghost" href="tel:+3534730197"><i class="fa-solid fa-phone" aria-hidden="true"></i> <span data-i18n="cta.call">Call us</span></a>
           </div>
-          <p class="ncs__note">
-            We’re happy to talk you through the options — we don’t provide financial advice, but we
-            can explain how NCS works at The Crayon Box.
+          <p class="ncs__note" data-i18n="ncs.note">
+            We’re glad to talk you through the options. We can’t give financial advice, but we can
+            explain how the NCS works here at The Crayon Box.
           </p>
         </div>
         <div class="ncs__badge" aria-hidden="true">
@@ -381,8 +431,8 @@
     <section class="section section--tint location" id="location" aria-labelledby="location-heading">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow eyebrow--blue">Find us</p>
-          <h2 id="location-heading">Conveniently located in Latlurcan, Monaghan</h2>
+          <p class="eyebrow eyebrow--blue" data-i18n="loc.eyebrow">Find us</p>
+          <h2 id="location-heading" data-i18n="loc.title">Find us in Latlurcan, Monaghan</h2>
         </header>
 
         <div class="location__grid">
@@ -391,27 +441,27 @@
             <address class="location__address">
               Latlurcan, Monaghan,<br />
               Co. Monaghan,<br />
-              <strong>Eircode: H18 Y2H3</strong>
+              <strong><span data-i18n="loc.eircode">Eircode</span>: H18 Y2H3</strong>
             </address>
 
             <dl class="location__details">
               <div>
-                <dt>Phone</dt>
+                <dt data-i18n="label.phone">Phone</dt>
                 <dd><a href="tel:+3534730197">+353 47 30197</a></dd>
               </div>
               <div>
-                <dt>Email</dt>
+                <dt data-i18n="label.email">Email</dt>
                 <dd><a href="mailto:thecrayonbox100@gmail.com">thecrayonbox100@gmail.com</a></dd>
               </div>
               <div>
-                <dt>Opening hours</dt>
-                <dd>Monday to Friday, opening at 8:00&nbsp;am</dd>
+                <dt data-i18n="label.hours">Opening hours</dt>
+                <dd data-i18n="value.hours">Monday to Thursday, 8:00&nbsp;am to 5:30&nbsp;pm. Friday, 8:00&nbsp;am to 5:00&nbsp;pm. Closed Saturday and Sunday.</dd>
               </div>
             </dl>
 
             <a class="btn btn--primary btn--lg" href="https://www.google.com/maps/dir/?api=1&amp;destination=The%20Crayon%20Box%2C%20Latlurcan%2C%20Monaghan%2C%20H18%20Y2H3" target="_blank" rel="noopener noreferrer">
-              <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> Get Directions
-              <span class="visually-hidden"> (opens Google Maps in a new tab)</span>
+              <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> <span data-i18n="cta.directions">Get Directions</span>
+              <span class="visually-hidden" data-i18n="a11y.newTab"> (opens Google Maps in a new tab)</span>
             </a>
           </div>
 
@@ -424,10 +474,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
                 allowfullscreen></iframe>
             </div>
-            <noscript>
-              <p>If the map does not load, search for “The Crayon Box, H18 Y2H3” on Google Maps.</p>
-            </noscript>
-            <p class="map-fallback">
+            <p class="map-fallback" data-i18n-html="loc.mapFallback">
               Map not loading? <a href="https://www.google.com/maps/search/?api=1&amp;query=H18%20Y2H3" target="_blank" rel="noopener noreferrer">Open in Google Maps</a> or search Eircode <strong>H18 Y2H3</strong>.
             </p>
           </div>
@@ -438,11 +485,11 @@
     <section class="section contact" id="contact" aria-labelledby="contact-heading">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow eyebrow--green">Get in touch</p>
-          <h2 id="contact-heading">Enquire about availability</h2>
-          <p class="section-head__sub">
-            Tell us a little about your family and the care you’re looking for, and we’ll be in
-            touch about availability. Prefer to talk? Call or email us any time.
+          <p class="eyebrow eyebrow--green" data-i18n="contact.eyebrow">Get in touch</p>
+          <h2 id="contact-heading" data-i18n="contact.title">Enquire about availability</h2>
+          <p class="section-head__sub" data-i18n="contact.sub">
+            Tell us a bit about your family and what you’re looking for, and we’ll come back to you
+            about availability. If you’d rather talk, call or email any time.
           </p>
         </header>
 
@@ -452,92 +499,103 @@
               <li>
                 <span class="contact__icon ic-green"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
                 <div>
-                  <span class="contact__label">Phone</span>
+                  <span class="contact__label" data-i18n="label.phone">Phone</span>
                   <a href="tel:+3534730197">+353 47 30197</a>
                 </div>
               </li>
               <li>
                 <span class="contact__icon ic-blue"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
                 <div>
-                  <span class="contact__label">Email</span>
+                  <span class="contact__label" data-i18n="label.email">Email</span>
                   <a href="mailto:thecrayonbox100@gmail.com">thecrayonbox100@gmail.com</a>
                 </div>
               </li>
               <li>
                 <span class="contact__icon ic-coral"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
                 <div>
-                  <span class="contact__label">Address</span>
+                  <span class="contact__label" data-i18n="label.address">Address</span>
                   <address>Latlurcan, Monaghan, Co. Monaghan, H18 Y2H3</address>
                 </div>
               </li>
               <li>
                 <span class="contact__icon ic-lavender"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
                 <div>
-                  <span class="contact__label">Opening hours</span>
-                  <span>Monday to Friday, opening at 8:00&nbsp;am</span>
+                  <span class="contact__label" data-i18n="label.hours">Opening hours</span>
+                  <span data-i18n="value.hours">Monday to Thursday, 8:00&nbsp;am to 5:30&nbsp;pm. Friday, 8:00&nbsp;am to 5:00&nbsp;pm. Closed Saturday and Sunday.</span>
                 </div>
               </li>
             </ul>
 
             <div class="contact__actions">
-              <a class="btn btn--primary" href="tel:+3534730197"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call Now</a>
-              <a class="btn btn--ghost" href="mailto:thecrayonbox100@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email Us</a>
-              <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=The%20Crayon%20Box%2C%20Latlurcan%2C%20Monaghan%2C%20H18%20Y2H3" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> Get Directions</a>
+              <a class="btn btn--primary" href="tel:+3534730197"><i class="fa-solid fa-phone" aria-hidden="true"></i> <span data-i18n="cta.callNow">Call Now</span></a>
+              <a class="btn btn--ghost" href="mailto:thecrayonbox100@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> <span data-i18n="cta.emailUs">Email Us</span></a>
+              <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=The%20Crayon%20Box%2C%20Latlurcan%2C%20Monaghan%2C%20H18%20Y2H3" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> <span data-i18n="cta.directions">Get Directions</span></a>
             </div>
           </aside>
 
           <div class="contact__form-wrap">
-            <form class="enquiry-form" id="enquiryForm" novalidate>
-              <p class="form-intro" id="formIntro">Fields marked with <span aria-hidden="true">*</span> are required.</p>
+            <form class="enquiry-form" id="enquiryForm" action="https://formspree.io/f/xzdlagrz" method="POST" aria-describedby="formIntro">
+              <!-- Honeypot field for spam filtering (kept off-screen; real users leave it empty) -->
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field" />
+              <input type="hidden" name="_subject" value="New childcare enquiry (The Crayon Box website)" />
+
+              <p class="form-intro" id="formIntro" data-i18n-html="form.intro">Fields marked with <span aria-hidden="true">*</span> are required.</p>
 
               <div class="field">
-                <label for="parentName">Parent / guardian name <span class="req" aria-hidden="true">*</span></label>
-                <input type="text" id="parentName" name="parentName" autocomplete="name" required aria-required="true" />
-                <p class="field__error" id="parentName-error" hidden>Please enter your name.</p>
+                <label for="parentName"><span data-i18n="form.parentName">Parent / guardian name</span> <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="parentName" name="parentName" autocomplete="name" required aria-required="true" maxlength="80" />
+                <p class="field__error" id="parentName-error" data-i18n="form.errName" hidden>Please enter your name.</p>
               </div>
 
               <div class="field-row">
                 <div class="field">
-                  <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
-                  <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" />
-                  <p class="field__error" id="email-error" hidden>Please enter a valid email address.</p>
+                  <label for="email"><span data-i18n="label.email">Email</span> <span class="req" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" maxlength="120" />
+                  <p class="field__error" id="email-error" data-i18n="form.errEmail" hidden>Please enter a valid email address.</p>
                 </div>
 
                 <div class="field">
-                  <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
-                  <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required aria-required="true" />
-                  <p class="field__error" id="phone-error" hidden>Please enter a contact phone number.</p>
+                  <label for="phone"><span data-i18n="label.phone">Phone</span> <span class="req" aria-hidden="true">*</span></label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required aria-required="true" maxlength="30" />
+                  <p class="field__error" id="phone-error" data-i18n="form.errPhone" hidden>Please enter a contact phone number.</p>
                 </div>
               </div>
 
               <div class="field-row">
                 <div class="field">
-                  <label for="childAge">Child’s age</label>
-                  <input type="text" id="childAge" name="childAge" placeholder="e.g. 2 years, or 4 months" />
+                  <label for="childAge" data-i18n="form.childAge">Child’s age</label>
+                  <input type="text" id="childAge" name="childAge" data-i18n-ph="form.childAgePh" placeholder="e.g. 2 years, or 18 months" maxlength="40" />
                 </div>
 
                 <div class="field">
-                  <label for="service">Service interested in</label>
+                  <label for="service" data-i18n="form.service">Service interested in</label>
                   <select id="service" name="service">
-                    <option value="" selected>Please choose…</option>
-                    <option>Baby &amp; Toddler Care (0–3)</option>
-                    <option>Preschool &amp; ECCE (3–5)</option>
-                    <option>After-School Care (5–12)</option>
-                    <option>Summer Camps (5–12)</option>
-                    <option>Full-Day Care</option>
-                    <option>Part-Time Care</option>
-                    <option>Not sure yet / general enquiry</option>
+                    <option value="" selected data-i18n="form.choose">Please choose…</option>
+                    <option data-i18n="form.opt.baby">Baby &amp; Toddler Care (1 to 3)</option>
+                    <option data-i18n="form.opt.pre">Preschool &amp; ECCE (3 to 5)</option>
+                    <option data-i18n="form.opt.after">After-School Care (5 to 12)</option>
+                    <option data-i18n="form.opt.summer">Summer Camps (5 to 12)</option>
+                    <option data-i18n="form.opt.full">Full-Day Care</option>
+                    <option data-i18n="form.opt.part">Part-Time Care</option>
+                    <option data-i18n="form.opt.other">Not sure yet / general enquiry</option>
                   </select>
                 </div>
               </div>
 
               <div class="field">
-                <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
-                <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Tell us what you’re looking for, and any preferred start date or days."></textarea>
-                <p class="field__error" id="message-error" hidden>Please add a short message.</p>
+                <label for="message"><span data-i18n="form.message">Message</span> <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="5" required aria-required="true" data-i18n-ph="form.messagePh" placeholder="Tell us what you’re looking for, and any preferred start date or days." minlength="4" maxlength="1000"></textarea>
+                <p class="field__error" id="message-error" data-i18n="form.errMessage" hidden>Please add a short message.</p>
               </div>
 
-              <button type="submit" class="btn btn--primary btn--lg btn--block">Send Enquiry</button>
+              <div class="field field--captcha">
+                <div class="captcha-box">
+                  <div class="g-recaptcha" data-sitekey="6LcHsj0tAAAAAOsAYDOpFUK06yVKhGZcu2OJyBrg"></div>
+                </div>
+                <p class="field__error" id="captcha-error" data-i18n="form.errCaptcha" hidden>Please confirm you’re not a robot.</p>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg btn--block" data-i18n="form.submit">Send Enquiry</button>
 
               <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
             </form>
@@ -550,44 +608,46 @@
   <footer class="site-footer">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <a class="brand brand--footer" href="#top" aria-label="The Crayon Box — back to top">
+        <a class="brand brand--footer" href="#top" data-i18n-aria="a11y.brandTop" aria-label="The Crayon Box, back to top">
           <img class="brand__logo" src="images/logo.png" alt="" width="52" height="52" />
           <span class="brand__name">The Crayon Box</span>
         </a>
-        <p class="footer__tag">Early Childhood Education &amp; Care · Est. 2025</p>
-        <p class="footer__ncs"><i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i> Accepting the National Childcare Scheme (NCS)</p>
+        <p class="footer__tag" data-i18n="hero.eyebrow">Early Childhood Education &amp; Care · Est. 2025</p>
+        <p class="footer__ncs"><i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i> <span data-i18n="footer.ncs">Accepting the National Childcare Scheme (NCS)</span></p>
       </div>
 
       <nav class="footer__links" aria-label="Footer">
-        <h2 class="footer__heading">Quick links</h2>
+        <h2 class="footer__heading" data-i18n="footer.quicklinks">Quick links</h2>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#facilities">Facilities</a></li>
-          <li><a href="#ncs">NCS Support</a></li>
-          <li><a href="#location">Location</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#facilities" data-i18n="nav.facilities">Facilities</a></li>
+          <li><a href="#ncs" data-i18n="nav.ncs">NCS</a></li>
+          <li><a href="#location" data-i18n="nav.location">Location</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="footer__contact">
-        <h2 class="footer__heading">Contact</h2>
+        <h2 class="footer__heading" data-i18n="nav.contact">Contact</h2>
         <address>
           Latlurcan, Monaghan,<br />
           Co. Monaghan, H18 Y2H3<br /><br />
           <a href="tel:+3534730197">+353 47 30197</a><br />
           <a href="mailto:thecrayonbox100@gmail.com">thecrayonbox100@gmail.com</a><br /><br />
-          Mon–Fri, opening at 8:00&nbsp;am
+          <span data-i18n="value.hours">Monday to Thursday, 8:00&nbsp;am to 5:30&nbsp;pm. Friday, 8:00&nbsp;am to 5:00&nbsp;pm. Closed Saturday and Sunday.</span>
         </address>
       </div>
     </div>
 
     <div class="container footer__bottom">
-      <p>&copy; <span id="year">2025</span> The Crayon Box. All rights reserved.</p>
-      <p class="footer__credit">Latlurcan, Monaghan · Childcare &amp; Preschool</p>
+      <p>&copy; <span id="year">2025</span> The Crayon Box. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p class="footer__credit" data-i18n="footer.credit">Latlurcan, Monaghan · Childcare &amp; Preschool</p>
     </div>
   </footer>
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="i18n.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>

@@ -1,17 +1,23 @@
 (function () {
   "use strict";
 
+  function msg(key, fallback) {
+    return (window.I18N && window.I18N.t) ? window.I18N.t(key) : fallback;
+  }
+
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   var navToggle = document.getElementById("navToggle");
   var navMenu = document.getElementById("navMenu");
+  var navBreakpoint = 1280;
 
   if (navToggle && navMenu) {
     var setMenu = function (open) {
       navMenu.classList.toggle("is-open", open);
       navToggle.setAttribute("aria-expanded", String(open));
-      navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      navToggle.setAttribute("aria-label", open ? msg("a11y.closeMenu", "Close menu") : msg("a11y.openMenu", "Open menu"));
+      document.body.classList.toggle("nav-open", open);
     };
 
     navToggle.addEventListener("click", function () {
@@ -22,6 +28,12 @@
       if (e.target.closest("a")) setMenu(false);
     });
 
+    document.addEventListener("click", function (e) {
+      if (!navMenu.classList.contains("is-open")) return;
+      if (navMenu.contains(e.target) || navToggle.contains(e.target)) return;
+      setMenu(false);
+    });
+
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && navMenu.classList.contains("is-open")) {
         setMenu(false);
@@ -29,16 +41,22 @@
       }
     });
 
+    document.addEventListener("i18n:change", function () {
+      setMenu(navMenu.classList.contains("is-open"));
+    });
+
     window.addEventListener("resize", function () {
-      if (window.innerWidth > 760) setMenu(false);
+      if (window.innerWidth > navBreakpoint) setMenu(false);
     });
   }
 
   var form = document.getElementById("enquiryForm");
   if (!form) return;
 
+  form.noValidate = true;
+
   var statusEl = document.getElementById("formStatus");
-  var RECIPIENT = "thecrayonbox100@gmail.com";
+  var submitBtn = form.querySelector('button[type="submit"]');
 
   var rules = [
     { id: "parentName", test: function (v) { return v.trim().length > 1; } },
@@ -79,9 +97,10 @@
     if (type) statusEl.classList.add(type);
   }
 
-  function value(id) {
-    var el = document.getElementById(id);
-    return el ? el.value.trim() : "";
+  function resetCaptcha() {
+    if (typeof grecaptcha !== "undefined" && grecaptcha.reset) {
+      try { grecaptcha.reset(); } catch (e) {}
+    }
   }
 
   form.addEventListener("submit", function (e) {
@@ -96,34 +115,51 @@
     });
 
     if (firstInvalid) {
-      setStatus("Please check the highlighted fields and try again.", "is-error");
+      setStatus(msg("form.statusCheck", "Please check the highlighted fields and try again."), "is-error");
       firstInvalid.focus();
       return;
     }
 
-    // No backend is connected. Hand the enquiry to the parent's email client so
-    // nothing is faked. To send server-side instead, replace this block with a
-    // fetch() POST to a form service or API and only report success when it resolves.
-    var subject = "Childcare enquiry — " + (value("parentName") || "Website");
-    var body = [
-      "Parent / guardian: " + value("parentName"),
-      "Email: " + value("email"),
-      "Phone: " + value("phone"),
-      "Child's age: " + (value("childAge") || "—"),
-      "Service interested in: " + (value("service") || "—"),
-      "",
-      "Message:",
-      value("message")
-    ].join("\n");
+    // reCAPTCHA: require a completed challenge before sending.
+    var captchaErr = document.getElementById("captcha-error");
+    if (typeof grecaptcha !== "undefined" && grecaptcha.getResponse) {
+      if (!grecaptcha.getResponse()) {
+        if (captchaErr) captchaErr.hidden = false;
+        setStatus(msg("form.errCaptcha", "Please confirm you’re not a robot."), "is-error");
+        return;
+      }
+      if (captchaErr) captchaErr.hidden = true;
+    }
 
-    window.location.href = "mailto:" + RECIPIENT +
-      "?subject=" + encodeURIComponent(subject) +
-      "&body=" + encodeURIComponent(body);
+    // Submit to Formspree over AJAX so the parent stays on the page.
+    if (submitBtn) submitBtn.disabled = true;
+    setStatus(msg("form.statusSending", "Sending your enquiry…"), null);
 
-    setStatus(
-      "Your email app should now open with your enquiry ready to send. " +
-      "If it doesn’t, please email us directly at " + RECIPIENT + ".",
-      "is-ok"
-    );
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    })
+      .then(function (res) {
+        if (res.ok) {
+          form.reset();
+          resetCaptcha();
+          setStatus(msg("form.statusSuccess", "Thanks! Your enquiry has been sent. We’ll be in touch soon."), "is-ok");
+          return;
+        }
+        return res.json().then(function (data) {
+          resetCaptcha();
+          var detail = data && data.errors && data.errors.length
+            ? data.errors.map(function (er) { return er.message; }).join(", ")
+            : msg("form.statusError", "Sorry, something went wrong. Please call or email us instead.");
+          setStatus(detail, "is-error");
+        });
+      })
+      .catch(function () {
+        setStatus(msg("form.statusError", "Sorry, something went wrong. Please call or email us instead."), "is-error");
+      })
+      .then(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      });
   });
 })();
