@@ -28,7 +28,7 @@ python -m http.server 8000
 | `script.js` | Mobile nav, footer year, form validation, Formspree submit |
 | `i18n.js` | Translation dictionary (EN/GA/PL/LT/RU) and language switcher |
 | `images/logo.png` | Brand logo (also used as favicon) |
-| `images/facility-exterior.jpg` | Photo of the premises (hero + facilities) |
+| `images/crayonbox_exterior_*.jpeg`, `sandpit.jpeg`, `play_workspace.jpeg`, `defibrilator.jpeg` | Facility photos (hero + gallery carousel) |
 
 ## Google Maps integration
 
@@ -101,7 +101,8 @@ local idiom.
 
 - No framework existed in the repo, so a dependency-free static site was chosen
   for speed, reliability and easy hosting.
-- `images.jpg` was renamed to `images/facility-exterior.jpg`.
+- Facility photos in `images/` were optimised for web (resized, compressed) and
+  shown in the hero and an accessible gallery carousel in the Facilities section.
 - Placeholder canonical/OG URL `https://www.thecrayonbox.ie/` — update to the
   real domain before launch.
 - The non-English translations were produced during the build and should be

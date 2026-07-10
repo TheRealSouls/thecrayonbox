@@ -17,22 +17,24 @@
   <meta property="og:title" content="The Crayon Box | Childcare &amp; Preschool in Monaghan" />
   <meta property="og:description" content="A bright, caring, purpose-built childcare facility in Latlurcan, Monaghan for children aged 1 to 12. Full-day, part-time, preschool/ECCE, after-school and summer camps." />
   <meta property="og:locale" content="en_IE" />
-  <meta property="og:image" content="https://www.thecrayonbox.ie/images/facility-exterior.jpg" />
+  <meta property="og:image" content="https://www.thecrayonbox.ie/images/crayonbox_exterior_1.jpeg" />
   <meta property="og:image:alt" content="The Crayon Box childcare premises in Latlurcan, Monaghan." />
   <meta property="og:url" content="https://www.thecrayonbox.ie/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The Crayon Box | Childcare &amp; Preschool in Monaghan" />
   <meta name="twitter:description" content="Purpose-built childcare, preschool/ECCE, after-school care and summer camps in Latlurcan, Monaghan." />
-  <meta name="twitter:image" content="https://www.thecrayonbox.ie/images/facility-exterior.jpg" />
+  <meta name="twitter:image" content="https://www.thecrayonbox.ie/images/crayonbox_exterior_1.jpeg" />
   <meta name="twitter:image:alt" content="The Crayon Box childcare premises in Latlurcan, Monaghan." />
 
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="apple-touch-icon" href="images/logo.png" />
-  <link rel="preload" as="image" href="images/facility-exterior.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="images/crayonbox_exterior_1.webp" type="image/webp" fetchpriority="high" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@400;500;600;700&display=swap" /></noscript>
 
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/d24d18c78a.js" crossorigin="anonymous" defer></script>
@@ -46,7 +48,7 @@
     "description": "Modern purpose-built childcare facility in Latlurcan, Monaghan offering full-day care, part-time care, preschool/ECCE, after-school care and summer camps for children aged 1 to 12.",
     "url": "https://www.thecrayonbox.ie/",
     "logo": "https://www.thecrayonbox.ie/images/logo.png",
-    "image": "https://www.thecrayonbox.ie/images/facility-exterior.jpg",
+    "image": "https://www.thecrayonbox.ie/images/crayonbox_exterior_1.jpeg",
     "hasMap": "https://www.google.com/maps/search/?api=1&query=H18%20Y2H3",
     "telephone": "+353 47 30197",
     "email": "thecrayonbox100@gmail.com",
@@ -186,10 +188,13 @@
 
         <div class="hero__media">
           <figure class="hero__frame">
-            <img
-              src="images/facility-exterior.jpg"
-              alt="The Crayon Box premises in Latlurcan, Monaghan. A modern building with bright, colourful signage and framed windows."
-              width="387" height="516" loading="eager" decoding="async" fetchpriority="high" />
+            <picture>
+              <source type="image/webp" srcset="images/crayonbox_exterior_1.webp" />
+              <img
+                src="images/crayonbox_exterior_1.jpeg"
+                alt="The bright entrance of The Crayon Box on a sunny day, with glass doors, picnic benches and outdoor play equipment."
+                width="1080" height="810" loading="eager" decoding="async" fetchpriority="high" />
+            </picture>
             <figcaption class="hero__caption" data-i18n="hero.caption">Our purpose-built home in Latlurcan, Monaghan</figcaption>
           </figure>
           <span class="hero__sticker" data-i18n="hero.sticker">Now enrolling</span>
@@ -392,13 +397,69 @@
           </div>
         </div>
 
-        <figure class="facility-photo">
-          <img
-            src="images/facility-exterior.jpg"
-            alt="The exterior of The Crayon Box building in Latlurcan, Monaghan, a modern dark-clad childcare facility with bright, colourful signage and framed windows."
-            width="387" height="516" loading="lazy" decoding="async" />
-          <figcaption data-i18n="fac.caption">Our modern, purpose-built premises in Latlurcan, Monaghan.</figcaption>
-        </figure>
+        <div class="gallery">
+          <div class="gallery__head">
+            <h3 data-i18n="gallery.title">Take a look around</h3>
+            <p data-i18n="gallery.sub">A few photos of our building, play areas and facilities.</p>
+          </div>
+
+          <div class="carousel" id="galleryCarousel" role="group" aria-roledescription="carousel" data-i18n-aria="a11y.carousel" aria-label="Photos of The Crayon Box">
+            <div class="carousel__viewport">
+              <ul class="carousel__track" id="carouselTrack">
+                <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="1 / 6">
+                  <picture>
+                    <source type="image/webp" srcset="images/crayonbox_exterior_1.webp" />
+                    <img class="carousel__img" src="images/crayonbox_exterior_1.jpeg" alt="The entrance of The Crayon Box with glass doors, windows and picnic benches." width="1080" height="810" loading="lazy" decoding="async" />
+                  </picture>
+                  <p class="carousel__caption" data-i18n="gallery.cap1">Our bright, welcoming entrance</p>
+                </li>
+                <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 / 6">
+                  <picture>
+                    <source type="image/webp" srcset="images/crayonbox_exterior_2.webp" />
+                    <img class="carousel__img" src="images/crayonbox_exterior_2.jpeg" alt="The fenced outdoor play area at The Crayon Box with grass, toys and the building behind." width="1080" height="810" loading="lazy" decoding="async" />
+                  </picture>
+                  <p class="carousel__caption" data-i18n="gallery.cap2">Secure outdoor play areas</p>
+                </li>
+                <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 / 6">
+                  <picture>
+                    <source type="image/webp" srcset="images/crayonbox_exterior_3.webp" />
+                    <img class="carousel__img" src="images/crayonbox_exterior_3.jpeg" alt="The Crayon Box childcare buildings with accessible parking and outdoor play space." width="1080" height="810" loading="lazy" decoding="async" />
+                  </picture>
+                  <p class="carousel__caption" data-i18n="gallery.cap3">Our modern, purpose-built facility</p>
+                </li>
+                <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 / 6">
+                  <picture>
+                    <source type="image/webp" srcset="images/sandpit.webp" />
+                    <img class="carousel__img" src="images/sandpit.jpeg" alt="A large wooden sandpit filled with sand and colourful buckets, spades and play tools." width="1440" height="1080" loading="lazy" decoding="async" />
+                  </picture>
+                  <p class="carousel__caption" data-i18n="gallery.cap4">The built-in sandpit</p>
+                </li>
+                <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="5 / 6">
+                  <picture>
+                    <source type="image/webp" srcset="images/play_workspace.webp" />
+                    <img class="carousel__img" src="images/play_workspace.jpeg" alt="An outdoor wooden mud kitchen with pots, pans, basins and play utensils." width="1440" height="1080" loading="lazy" decoding="async" />
+                  </picture>
+                  <p class="carousel__caption" data-i18n="gallery.cap5">Outdoor mud kitchen for messy play</p>
+                </li>
+                <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="6 / 6">
+                  <picture>
+                    <source type="image/webp" srcset="images/defibrilator.webp" />
+                    <img class="carousel__img" src="images/defibrilator.jpeg" alt="A yellow defibrillator cabinet with a heart-shaped window at The Crayon Box." width="720" height="540" loading="lazy" decoding="async" />
+                  </picture>
+                  <p class="carousel__caption" data-i18n="gallery.cap6">On-site defibrillator for added safety</p>
+                </li>
+              </ul>
+            </div>
+
+            <button class="carousel__arrow carousel__arrow--prev" type="button" data-i18n-aria="a11y.prevPhoto" aria-label="Previous photo"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="carousel__arrow carousel__arrow--next" type="button" data-i18n-aria="a11y.nextPhoto" aria-label="Next photo"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+
+            <div class="carousel__controls">
+              <button class="carousel__playpause" type="button" data-i18n-aria="a11y.pausePhotos" aria-label="Pause photo slideshow"><i class="fa-solid fa-pause" aria-hidden="true"></i></button>
+              <div class="carousel__dots" role="group" data-i18n-aria="a11y.choosePhoto" aria-label="Choose photo"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -518,6 +579,20 @@
                 </div>
               </li>
               <li>
+                <span class="contact__icon ic-blue"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
+                <div>
+                  <span class="contact__label" data-i18n="footer.follow">Follow us</span>
+                  <a href="https://www.facebook.com/p/The-Crayon-Box-61573104817805/" target="_blank" rel="noopener noreferrer" data-i18n-aria="social.facebook" aria-label="The Crayon Box on Facebook (opens in a new tab)">The Crayon Box on Facebook</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon ic-coral"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
+                <div>
+                  <span class="contact__label" data-i18n="social.instagramLabel">Instagram</span>
+                  <a href="https://www.instagram.com/thecrayonbox100/" target="_blank" rel="noopener noreferrer" data-i18n-aria="social.instagram" aria-label="The Crayon Box on Instagram (opens in a new tab)">@thecrayonbox100</a>
+                </div>
+              </li>
+              <li>
                 <span class="contact__icon ic-lavender"><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
                 <div>
                   <span class="contact__label" data-i18n="label.hours">Opening hours</span>
@@ -614,6 +689,15 @@
         </a>
         <p class="footer__tag" data-i18n="hero.eyebrow">Early Childhood Education &amp; Care · Est. 2025</p>
         <p class="footer__ncs"><i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i> <span data-i18n="footer.ncs">Accepting the National Childcare Scheme (NCS)</span></p>
+        <div class="footer__social">
+          <span class="footer__social-label" data-i18n="footer.follow">Follow us</span>
+          <a class="social-link" href="https://www.facebook.com/p/The-Crayon-Box-61573104817805/" target="_blank" rel="noopener noreferrer" data-i18n-aria="social.facebook" aria-label="The Crayon Box on Facebook (opens in a new tab)">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/thecrayonbox100/" target="_blank" rel="noopener noreferrer" data-i18n-aria="social.instagram" aria-label="The Crayon Box on Instagram (opens in a new tab)">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
 
       <nav class="footer__links" aria-label="Footer">
@@ -647,7 +731,6 @@
     </div>
   </footer>
 
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="i18n.js" defer></script>
   <script src="script.js" defer></script>
 </body>

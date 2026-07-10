@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.thecrayonbox.ie/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.thecrayonbox.ie/images/crayonbox_exterior_1.jpeg</image:loc>
+      <image:caption>The entrance of The Crayon Box childcare in Latlurcan, Monaghan</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thecrayonbox.ie/images/crayonbox_exterior_2.jpeg</image:loc>
+      <image:caption>Secure outdoor play areas at The Crayon Box</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thecrayonbox.ie/images/crayonbox_exterior_3.jpeg</image:loc>
+      <image:caption>The modern, purpose-built Crayon Box facility</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thecrayonbox.ie/images/sandpit.jpeg</image:loc>
+      <image:caption>The built-in sandpit at The Crayon Box</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thecrayonbox.ie/images/play_workspace.jpeg</image:loc>
+      <image:caption>Outdoor mud kitchen at The Crayon Box</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thecrayonbox.ie/images/defibrilator.jpeg</image:loc>
+      <image:caption>On-site defibrillator at The Crayon Box</image:caption>
+    </image:image>
   </url>
 </urlset>

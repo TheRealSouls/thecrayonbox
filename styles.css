@@ -264,17 +264,18 @@ address { font-style: normal; }
 .hero__media { position: relative; z-index: 2; }
 .hero__frame {
   margin: 0 auto;
-  max-width: 370px;
+  max-width: 460px;
   background: #fff;
   padding: 10px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--line);
 }
+.hero__frame picture { display: block; }
 .hero__frame img {
   display: block;
   border-radius: 10px;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   width: 100%;
 }
@@ -360,14 +361,61 @@ address { font-style: normal; }
 .facility h3 { font-size: 1.08rem; margin: 0 0 .3rem; }
 .facility p { margin: 0; color: var(--ink-soft); font-size: .95rem; }
 
-.facility-photo {
-  margin: clamp(2rem, 4vw, 3rem) auto 0;
-  max-width: 380px;
-  background: #fff; padding: 10px; border-radius: var(--radius-lg);
-  box-shadow: var(--shadow); border: 1px solid var(--line);
+/* Gallery / carousel */
+.gallery { margin: clamp(2.5rem, 5vw, 3.5rem) auto 0; max-width: 760px; }
+.gallery__head { text-align: center; margin-bottom: 1.2rem; }
+.gallery__head h3 { font-size: 1.4rem; margin-bottom: .3rem; }
+.gallery__head p { color: var(--ink-soft); margin: 0; }
+
+.carousel { position: relative; }
+.carousel__viewport {
+  overflow: hidden; border-radius: var(--radius-lg);
+  box-shadow: var(--shadow); border: 1px solid var(--line); background: var(--ink);
 }
-.facility-photo img { display: block; border-radius: 10px; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
-.facility-photo figcaption { text-align: center; color: var(--ink-soft); font-family: var(--font-head); padding: .8rem .5rem .2rem; }
+.carousel__track { display: flex; list-style: none; margin: 0; padding: 0; transition: transform .45s ease; }
+.carousel__slide { position: relative; flex: 0 0 100%; min-width: 0; aspect-ratio: 4 / 3; overflow: hidden; }
+.carousel__slide picture { display: block; width: 100%; height: 100%; }
+.carousel__img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.carousel__caption {
+  position: absolute; z-index: 2; left: 0; right: 0; bottom: 0; margin: 0;
+  background: linear-gradient(transparent, rgba(20, 18, 24, .82));
+  color: #fff; font-family: var(--font-head); font-weight: 600;
+  padding: 2.2rem 1rem .9rem; text-align: center; font-size: 1rem;
+}
+
+.carousel__arrow {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 3;
+  width: 44px; height: 44px; border-radius: 50%; border: 0;
+  background: rgba(255, 255, 255, .92); color: var(--ink);
+  display: grid; place-items: center; cursor: pointer; font-size: 1.05rem; box-shadow: var(--shadow);
+}
+.carousel__arrow:hover { background: #fff; }
+.carousel__arrow--prev { left: .6rem; }
+.carousel__arrow--next { right: .6rem; }
+
+.carousel__controls { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: .9rem; }
+.carousel__playpause {
+  width: 38px; height: 38px; border-radius: 50%; flex: none;
+  border: 1px solid var(--line); background: #fff; color: var(--ink);
+  display: grid; place-items: center; cursor: pointer;
+}
+.carousel__dots { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; justify-content: center; }
+.carousel__dot { width: 12px; height: 12px; border-radius: 50%; padding: 0; border: 2px solid var(--blue-dark); background: transparent; cursor: pointer; }
+.carousel__dot[aria-current="true"] { background: var(--blue-dark); }
+
+/* Social links */
+.footer__social { display: flex; align-items: center; gap: .6rem; margin-top: 1rem; }
+.footer__social-label { color: #cfcbd8; font-family: var(--font-head); font-weight: 600; font-size: .95rem; }
+.social-link {
+  display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(255, 255, 255, .14); color: #fff; font-size: 1.05rem; text-decoration: none;
+  transition: background-color .15s ease, color .15s ease;
+}
+.social-link:hover { background: #fff; color: var(--ink); }
+
+@media (max-width: 480px) {
+  .carousel__arrow { width: 40px; height: 40px; }
+}
 
 /* NCS */
 .ncs { background: var(--cream-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
