@@ -31,7 +31,7 @@
   --shadow:    0 2px 8px rgba(44, 42, 50, .08);
   --shadow-lg: 0 2px 8px rgba(44, 42, 50, .10);
 
-  --container: 1200px;
+  --container: 1280px;
   --gutter: clamp(1.1rem, 4vw, 2.5rem);
 }
 
@@ -413,6 +413,15 @@ address { font-style: normal; }
 }
 .social-link:hover { background: #fff; color: var(--ink); }
 
+/* Header social icons (light theme, compact) */
+.header-social { display: inline-flex; align-items: center; gap: .35rem; flex: none; }
+.social-link--header {
+  width: 34px; height: 34px; font-size: .92rem;
+  background: var(--cream-2); color: var(--ink); border: 1px solid var(--line);
+}
+.social-link--header:hover { background: var(--blue-dark); color: #fff; border-color: var(--blue-dark); }
+@media (max-width: 400px) { .header-social { display: none; } }
+
 @media (max-width: 480px) {
   .carousel__arrow { width: 40px; height: 40px; }
 }
@@ -534,11 +543,11 @@ address { font-style: normal; }
 /* Responsive */
 /* Collapse the primary nav to a toggle before it can crowd the logo.
    Set wide enough that the longer translated labels still fit on desktop. */
-@media (min-width: 1281px) {
+@media (min-width: 1361px) {
   .nav-menu a { white-space: nowrap; }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1360px) {
   .nav-toggle { display: flex; }
   .nav-menu {
     position: fixed; inset: 72px 0 auto 0;

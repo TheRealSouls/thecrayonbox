@@ -541,6 +541,9 @@ window.I18N = (function () {
   }
 
   function detect() {
+    var param;
+    try { param = new URLSearchParams(location.search).get("lang"); } catch (e) {}
+    if (param && SUPPORTED.indexOf(param) > -1) return param;
     var saved;
     try { saved = localStorage.getItem(STORAGE); } catch (e) {}
     if (saved && SUPPORTED.indexOf(saved) > -1) return saved;

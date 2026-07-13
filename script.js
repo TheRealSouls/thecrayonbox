@@ -10,7 +10,7 @@
 
   var navToggle = document.getElementById("navToggle");
   var navMenu = document.getElementById("navMenu");
-  var navBreakpoint = 1280;
+  var navBreakpoint = 1360;
 
   if (navToggle && navMenu) {
     var setMenu = function (open) {
