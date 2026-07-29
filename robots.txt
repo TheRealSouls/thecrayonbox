@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.thecrayonbox.ie/sitemap.xml
+Sitemap: https://thecrayonbox.ie/sitemap.xml

@@ -103,8 +103,10 @@ local idiom.
   for speed, reliability and easy hosting.
 - Facility photos in `images/` were optimised for web (resized, compressed) and
   shown in the hero and an accessible gallery carousel in the Facilities section.
-- Placeholder canonical/OG URL `https://www.thecrayonbox.ie/` — update to the
-  real domain before launch.
+- The site is served by GitHub Pages on the apex domain `https://thecrayonbox.ie/`
+  (the `CNAME` file pins it). `www` 301-redirects to the apex, so every canonical,
+  `og:url`, `hreflang`, JSON-LD and sitemap URL must use the apex form, without
+  `www`, to avoid duplicate-content signals.
 - The non-English translations were produced during the build and should be
   proofread by native speakers.
 - The browser auto-detects the visitor's language on first visit (then remembers
