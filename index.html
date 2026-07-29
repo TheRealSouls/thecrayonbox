@@ -12,12 +12,12 @@
   <meta name="author" content="The Crayon Box" />
   <meta name="google-site-verification" content="bH5rcVJzDeSld3W6hqkFfi-fvSSu3lyfUxW_w1LE0K4" />
   <link rel="canonical" href="https://thecrayonbox.ie/" />
-  <link rel="alternate" hreflang="en" href="https://thecrayonbox.ie/" />
-  <link rel="alternate" hreflang="ga" href="https://thecrayonbox.ie/?lang=ga" />
-  <link rel="alternate" hreflang="pl" href="https://thecrayonbox.ie/?lang=pl" />
-  <link rel="alternate" hreflang="lt" href="https://thecrayonbox.ie/?lang=lt" />
-  <link rel="alternate" hreflang="ru" href="https://thecrayonbox.ie/?lang=ru" />
-  <link rel="alternate" hreflang="x-default" href="https://thecrayonbox.ie/" />
+  <!-- No hreflang tags. Translation is client-side on a single URL, so the
+       ?lang= variants canonicalise back to "/". Google ignores hreflang whose
+       targets are not self-canonical, and crawling those variants only produced
+       "Alternative page with proper canonical tag" reports in Search Console.
+       ?lang= still works for shared links. Re-add hreflang only if real, separately
+       indexable language pages (/pl/, /ru/, ...) are ever built. -->
   <meta name="theme-color" content="#29ABE2" />
 
   <meta property="og:type" content="business.business" />
